@@ -56,7 +56,7 @@ export default function App() {
          if(num1==rnum){
            setgess("Your guess is right")
            setreward(reward+10)
-          
+           setrnum(Math.floor(Math.random()*99)+1)
          }else{
            setgess("your guess is wrong")
          }
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     display:'none'
   },
   st1:{
-    marginTop:-100,
+    marginTop:-50,
     marginBottom:50,
     fontSize:30,
     
